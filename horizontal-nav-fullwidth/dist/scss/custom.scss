@@ -104,7 +104,7 @@ footer {
         cursor: pointer;
         position: relative;
         margin-left: 40px;
-        padding: 5px 25px;
+        padding: 2px 25px;
 
         &:before {
           content: '';
@@ -172,7 +172,7 @@ footer {
       padding-top: 0px;
 
       img {
-        height: 100px;
+        height: 85px;
         padding: 15px 0;
       }
 
@@ -188,14 +188,14 @@ footer {
   }
 
   .horizontal-nav .sidebar-nav #sidebarnav>li>a {
-    padding: 35px 15px;
+    padding: 27px 15px;
     border-left: 0px;
     border-bottom: 3px solid transparent;
     color: #424242;
   }
 
   .horizontal-nav .sidebar-nav #sidebarnav>li.tivaLogo a {
-    padding: 18px 15px;
+    padding: 11px 15px;
   }
 
   .horizontal-nav .sidebar-nav #sidebarnav>li:hover>a,
@@ -210,6 +210,47 @@ footer {
 
 }
 
+@media (min-width: 768px) and (max-width:1200px) {
+  .container {
+    max-width: 100%;
+  }
+  .sidebar-nav>ul>li>a i {
+    width: auto;
+    font-size: 16px;
+    display: inline;
+    vertical-align: middle;
+    color: #787f91;
+    margin-right: 5px;
+  }
+
+  .mini-sidebar.show-sidebar .left-sidebar,
+  .mini-sidebar.show-sidebar .sidebar-footer {
+    left: 0px;
+  }
+
+  .horizontal-nav .sidebar-nav #sidebarnav>li>a {
+    padding: 27px 11px;
+    border-left: 0px;
+    border-bottom: 3px solid transparent;
+    color: #424242;
+  }
+
+  footer {
+    .footer-wrapper {
+      .footer-widget {
+        .footer-links {
+          li {
+            display: block;
+          }
+        }
+      }
+    }
+  }
+
+  .horizontal-nav .sidebar-nav {
+    float: none;
+  }
+}
 
 @media (min-width: 320px) and (max-width:767px) {
   .topbar .top-navbar .navbar-nav--tg {
@@ -242,21 +283,31 @@ footer {
   .left-sidebar {
     padding-top: 36px;
   }
-  
-  footer{
-    .footer-wrapper{
+
+  footer {
+    .footer-wrapper {
       padding: 10px 0;
-      .footer-widget{
-        .widget-title{
+
+      .footer-widget {
+        ul {
+          li {
+            a {
+              font-size: 13px;
+            }
+          }
+        }
+
+        .widget-title {
           margin: 10px 0;
           font-size: 16px;
         }
       }
     }
-    .footer-copyright{
-      .copyright-text{
+
+    .footer-copyright {
+      .copyright-text {
         padding: 0 10px;
       }
-    } 
+    }
   }
 }
