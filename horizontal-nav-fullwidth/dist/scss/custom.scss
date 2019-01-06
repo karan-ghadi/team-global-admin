@@ -207,13 +207,19 @@ footer {
     margin: 0;
     padding: 0;
   }
-
+  .tab-logo{
+    display: none;
+  }
 }
 
 @media (min-width: 768px) and (max-width:1200px) {
   .container {
     max-width: 100%;
   }
+  .tab-logo{
+    display: block !important;
+  }
+
   .sidebar-nav>ul>li>a i {
     width: auto;
     font-size: 16px;
@@ -223,9 +229,39 @@ footer {
     margin-right: 5px;
   }
 
+  .horizontal-nav .navbar-header {
+    padding-left: 15px;
+    float: left;
+    display: none;
+  }
+
+  .topbar .top-navbar .navbar-header {
+    background: 0;
+    line-height: 65px;
+    padding-left: 10px;
+    margin-right: 15px;
+    width: auto;
+    min-width: 70px;
+  }
+
+  .navbar-header .navbar-brand img {
+    height: 66px;
+    padding: 0;
+  }
+  .topbar .top-navbar .add-details.navbar-nav>.nav-item>.nav-link span{
+    display: none;
+  }
   .mini-sidebar.show-sidebar .left-sidebar,
   .mini-sidebar.show-sidebar .sidebar-footer {
     left: 0px;
+  }
+
+  .topbar .top-navbar .navbar-nav--tg {
+    background-color: #f7931d;
+    cursor: pointer;
+    position: relative;
+    margin-left: 40px;
+    padding: 17px 25px;
   }
 
   .horizontal-nav .sidebar-nav #sidebarnav>li>a {
@@ -253,6 +289,9 @@ footer {
 }
 
 @media (min-width: 320px) and (max-width:767px) {
+  .tab-logo{
+    display: none;
+  }
   .topbar .top-navbar .navbar-nav--tg {
     background-color: #f7931d;
     margin-left: 10px;

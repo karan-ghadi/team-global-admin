@@ -1,4 +1,5 @@
 $(function () {
+    console.log('working');
     "use strict";
     $(function () {
         $(".preloader").fadeOut();
@@ -11,7 +12,7 @@ $(function () {
     // ==============================================================  
     var set = function () {
         var width = (window.innerWidth > 0) ? window.innerWidth : this.screen.width;
-        var topOffset = 190;
+        var topOffset = 250;
         if (width < 1170) {
             $("body").addClass("mini-sidebar");
             $(".sidebartoggler i").addClass("ti-menu");
@@ -115,7 +116,7 @@ $(function () {
     // fixed navigattion while scrolll
     // ==============================================================
     function collapseNavbar() {
-        if ($(window).scrollTop() > 80) {
+        if ($(window).scrollTop() > 150) {
             $("body").addClass("fixed-sidebar");
             $(".left-sidebar").addClass("animated slideInDown");
              
