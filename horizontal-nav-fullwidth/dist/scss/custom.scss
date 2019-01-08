@@ -230,8 +230,12 @@ footer {
   }
 
   .horizontal-nav .sidebar-nav ul li ul,
-  .horizontal-nav .sidebar-nav #sidebarnav>li>ul li a {
+    {
     padding-left: 0;
+  }
+
+  .horizontal-nav .sidebar-nav #sidebarnav>li>ul li a {
+    padding-left: 15px;
   }
 
   .horizontal-nav .sidebar-nav ul li a {
@@ -502,6 +506,8 @@ footer {
 
   .left-sidebar {
     background-color: #0A64A2;
+    width: 100%;
+    height: auto;
   }
 
   .img-nav-replace {
