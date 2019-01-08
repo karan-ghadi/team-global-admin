@@ -1,4 +1,6 @@
 // In this scss you can overwrite all our scss, we suggested you to add your scss into this, so whenever the update comes it will not affect your code.
+
+
 .topbar {
   .top-navbar {
     .navbar-nav--tg {
@@ -90,6 +92,7 @@ footer {
       font-weight: 500;
       margin: 0;
       font-size: 13px;
+      font-family: $fontFace;
     }
   }
 }
@@ -172,8 +175,8 @@ footer {
       padding-top: 0px;
 
       img {
-        height: 85px;
-        padding: 15px 0;
+        height: 77px;
+        margin: 15px 0 5px;
       }
 
       .light-logo {
