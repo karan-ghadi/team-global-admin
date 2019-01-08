@@ -66,10 +66,10 @@
 
         .navbar-nav .nav-item span {
             line-height: 18px;
-            font-size: 15px;
-            font-weight: 500;
+            font-size: 12px;
+            font-weight: 400;
             color: $white;
-            padding: 0 5px;
+            padding: 0 3px;
         }
         .add-details.navbar-nav>.nav-item>.nav-link span{
             font-weight: 300;
@@ -244,4 +244,5 @@ Megamenu
             }
         }
     }
+    
 }

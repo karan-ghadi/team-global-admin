@@ -101,6 +101,11 @@ footer {
   }
 }
 
+.sidebar-nav ul li a,
+.sidebar-nav>ul>li>a i {
+  color: #424242;
+  font-weight: 400;
+}
 
 @media (min-width: 767px) {
   .topbar {
@@ -203,7 +208,7 @@ footer {
     font-size: 14px;
     font-weight: 400;
   }
-  
+
   .horizontal-nav .sidebar-nav #sidebarnav>li.tivaLogo a {
     padding: 20px 15px;
   }
@@ -230,8 +235,9 @@ footer {
     background: #f7931d;
     font-weight: normal;
   }
-  .skin-blue .sidebar-nav>ul>li.active>a{
-    border:0px !important;
+
+  .skin-blue .sidebar-nav>ul>li.active>a {
+    border: 0px !important;
     font-weight: normal;
   }
 
@@ -242,6 +248,7 @@ footer {
     background: #fff;
     font-weight: normal;
   }
+
   .horizontal-nav .sidebar-nav #sidebarnav>li>ul {
     padding-bottom: 0px;
     background: #0072bc;
@@ -256,9 +263,24 @@ footer {
   .tab-logo {
     display: none;
   }
+
+  .img-nav-replace {
+    display: none !important;
+  }
+
+  .tivaLogoImg {
+    display: block !important;
+  }
 }
 
 @media (min-width: 768px) and (max-width:1200px) {
+  .img-nav-replace {
+    display: none !important;
+  }
+
+  .tivaLogoImg {
+    display: block !important;
+  }
 
   .tab-logo {
     display: block !important;
@@ -311,10 +333,14 @@ footer {
   }
 
   .horizontal-nav .sidebar-nav #sidebarnav>li>a {
-    padding: 27px 11px;
+    padding: 25px 9.5px;
     border-left: 0px;
     border-bottom: 3px solid transparent;
     color: #424242;
+  }
+
+  .horizontal-nav .sidebar-nav #sidebarnav>li.tivaLogo a {
+    padding: 16px 15px;
   }
 
   footer {
@@ -428,12 +454,45 @@ footer {
       }
     }
   }
-  .skin-blue .sidebar-nav>ul>li.active>a{
-    border:0px !important;
-    font-weight: normal;
+
+  .sidebar-nav ul li a,
+  .sidebar-nav>ul>li>a i,
+  .skin-blue .sidebar-nav>ul>li.active>a i,
+  .skin-blue .sidebar-nav ul li a.active,
+  .skin-blue .sidebar-nav ul li a:hover,
+  .skin-blue .sidebar-nav ul li a.active i,
+  .skin-blue .sidebar-nav ul li a:hover i {
+    color: #fff;
   }
-  .sidebar-nav ul li a{
-    color: #424242;
-    font-weight: 400;
+  .sidebar-nav>ul>li>a i, .skin-blue .sidebar-nav>ul>li.active>a i{
+    display: none;
+  }
+  .sidebar-nav ul li ul{
+    padding-left:0; 
+  }
+  .sidebar-nav ul li a, {
+    padding: 5px 32px 5px 0;
+}
+  .skin-blue .sidebar-nav>ul>li.active>a {
+    border: 0px !important;
+    font-weight: normal;
+    color: #fff;
+  }
+
+  .sidebar-nav .has-arrow::after {
+    border-color: #fff;
+    top: 15px;
+  }
+
+  .left-sidebar {
+    background-color: #0A64A2;
+  }
+
+  .img-nav-replace {
+    display: block !important;
+  }
+
+  .tivaLogoImg {
+    display: none !important;
   }
 }
