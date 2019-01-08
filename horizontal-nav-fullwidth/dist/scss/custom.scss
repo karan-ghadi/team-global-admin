@@ -24,6 +24,10 @@
   }
 }
 
+.skin-blue .sidebar-nav>ul>li>a i {
+  display: none !important;
+}
+
 footer {
   .footer-wrapper {
     background: $footer-top-bg;
@@ -274,6 +278,11 @@ footer {
 }
 
 @media (min-width: 768px) and (max-width:1200px) {
+  .horizontal-nav .scroll-sidebar {
+    height: auto;
+    max-width: 100%;
+  }
+
   .img-nav-replace {
     display: none !important;
   }
@@ -283,7 +292,7 @@ footer {
   }
 
   .tab-logo {
-    display: block !important;
+    display: none !important;
   }
 
   .sidebar-nav>ul>li>a i {
@@ -298,7 +307,7 @@ footer {
   .horizontal-nav .navbar-header {
     padding-left: 15px;
     float: left;
-    display: none;
+    display: block;
   }
 
   .topbar .top-navbar .navbar-header {
@@ -308,11 +317,6 @@ footer {
     margin-right: 15px;
     width: auto;
     min-width: 70px;
-  }
-
-  .navbar-header .navbar-brand img {
-    height: 66px;
-    padding: 0;
   }
 
   .topbar .top-navbar .add-details.navbar-nav>.nav-item>.nav-link span {
@@ -333,14 +337,14 @@ footer {
   }
 
   .horizontal-nav .sidebar-nav #sidebarnav>li>a {
-    padding: 25px 9.5px;
+    padding: 36px 9.5px;
     border-left: 0px;
     border-bottom: 3px solid transparent;
     color: #424242;
   }
 
   .horizontal-nav .sidebar-nav #sidebarnav>li.tivaLogo a {
-    padding: 16px 15px;
+    padding: 30px 15px;
   }
 
   footer {
@@ -464,15 +468,21 @@ footer {
   .skin-blue .sidebar-nav ul li a:hover i {
     color: #fff;
   }
-  .sidebar-nav>ul>li>a i, .skin-blue .sidebar-nav>ul>li.active>a i{
+
+  .sidebar-nav>ul>li>a i,
+  .skin-blue .sidebar-nav>ul>li.active>a i {
     display: none;
   }
-  .sidebar-nav ul li ul{
-    padding-left:0; 
+
+  .sidebar-nav ul li ul {
+    padding-left: 0;
   }
-  .sidebar-nav ul li a, {
+
+  .sidebar-nav ul li a,
+    {
     padding: 5px 32px 5px 0;
-}
+  }
+
   .skin-blue .sidebar-nav>ul>li.active>a {
     border: 0px !important;
     font-weight: normal;
