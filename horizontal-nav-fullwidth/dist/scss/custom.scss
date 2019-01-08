@@ -210,6 +210,12 @@ footer {
     border-bottom: 0;
     color: #424242;
     font-size: 14px;
+    font-weight: 500;
+    text-transform: uppercase;
+  }
+
+  .horizontal-nav .sidebar-nav #sidebarnav>li>ul li a {
+    text-transform: capitalize;
     font-weight: 400;
   }
 
@@ -224,7 +230,7 @@ footer {
   }
 
   .horizontal-nav .sidebar-nav ul li ul,
-  .horizontal-nav .sidebar-nav #sidebarnav>li>ul {
+  .horizontal-nav .sidebar-nav #sidebarnav>li>ul li a {
     padding-left: 0;
   }
 
@@ -250,7 +256,7 @@ footer {
     color: #0072bc !important;
     border: 0px;
     background: #fff;
-    font-weight: normal;
+    font-weight: 500;
   }
 
   .horizontal-nav .sidebar-nav #sidebarnav>li>ul {
