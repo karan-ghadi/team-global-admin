@@ -517,4 +517,9 @@ footer {
   .tivaLogoImg {
     display: none !important;
   }
+
+  .mini-sidebar .left-sidebar,
+  .mini-sidebar .sidebar-footer {
+    left: -100%;
+  }
 }
