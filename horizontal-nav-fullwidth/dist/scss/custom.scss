@@ -176,7 +176,7 @@ footer {
 
       img {
         height: 77px;
-        margin: 15px 0 5px;
+        margin: 15px 0 8px;
       }
 
       .light-logo {
@@ -191,21 +191,43 @@ footer {
   }
 
   .horizontal-nav .sidebar-nav #sidebarnav>li>a {
-    padding: 27px 15px;
+    padding: 36px 15px;
     border-left: 0px;
-    border-bottom: 3px solid transparent;
+    border-bottom: 0;
     color: #424242;
+    font-size: 14px;
+    font-weight: 500;
   }
 
   .horizontal-nav .sidebar-nav #sidebarnav>li.tivaLogo a {
-    padding: 11px 15px;
+    padding: 20px 15px;
   }
-
+  .horizontal-nav .sidebar-nav #sidebarnav>li>ul{
+    padding-bottom: 0px;
+    background: #0072bc;
+    color:#fff;
+  }
+  .horizontal-nav .sidebar-nav ul li ul, .horizontal-nav .sidebar-nav #sidebarnav>li>ul{
+    padding-left: 0;
+  }
+  .horizontal-nav .sidebar-nav ul li a{
+    color:#fff;
+  }
+  .skin-blue .sidebar-nav ul li a.active, .skin-blue .sidebar-nav ul li a:hover{
+    color: #ffffff;
+    background: #f7931d;
+  }
   .horizontal-nav .sidebar-nav #sidebarnav>li:hover>a,
   .horizontal-nav .sidebar-nav #sidebarnav>li.active>a {
     color: #0072bc !important;
+    border:0px;
+    background: #fff;
   }
-
+  .horizontal-nav .sidebar-nav #sidebarnav>li>ul{
+    padding-bottom: 0px;
+    background: #0072bc;
+    color:#fff;
+  }
   .sidebar-nav ul {
     margin: 0;
     padding: 0;
